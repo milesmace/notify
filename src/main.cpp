@@ -5,14 +5,14 @@
 #include <iostream>
 
 #include "config.hpp"
+#include "notify.hpp"
 
 int main() {
     Config config("notify", "config.yaml");
-    config.get("random_shit");
     std::string serverUrl =
         config.get("default_server") + config.get("default_channel");
 
-    std::cout << serverUrl << std::endl;
+    notify(config, "Hello world", "My Title", Priority::MIN);
 
     return 0;
 }

@@ -14,7 +14,7 @@ Config::Config(std::string appName, std::string configFile = "config.yaml") {
     // Check if the file exists or not
     if (!fs::exists(this->configFilePath)) {
         // Create a new one
-        fs::create_directory(this->configDirpath);
+        fs::create_directories(this->configDirpath);
 
         // Write default config
         std::ofstream configFile(this->configFilePath);
