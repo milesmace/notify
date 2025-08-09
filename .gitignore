@@ -1,0 +1,18 @@
+# Ignore build artifacts
+/build/
+/*.o
+/*.obj
+/*.exe
+/*.out
+/*.app
+
+# Ignore editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.DS_Store
+
+# Ignore system files
+Thumbs.db
+*.log
